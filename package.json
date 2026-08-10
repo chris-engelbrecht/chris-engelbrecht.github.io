@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "bun lint:eslint && bun lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "lint:fix": "eslint . --fix && prettier --write --list-different .",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.121",
+    "@iconify-json/simple-icons": "^1.2.92",
+    "@nuxt/image": "2.1.0",
+    "@nuxt/ui": "^4.10.0",
+    "@nuxtjs/svg-sprite": "1.0.2",
+    "nuxt": "^4.5.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.16.0",
+    "@types/bun": "latest",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.9.6",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.9"
+  },
+  "packageManager": "bun"
+}
