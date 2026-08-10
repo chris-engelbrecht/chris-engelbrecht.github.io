@@ -22,6 +22,33 @@ useSeoMeta({
 
 <template>
   <UApp>
+    <UHeader>
+      <template #left>
+        <NuxtLink to="/" class="font-bold text-lg">
+          Christopher Engelbrecht
+        </NuxtLink>
+      </template>
+
+      <template #right>
+        <div class="flex items-center gap-2">
+          <UColorModeButton />
+          <UButton
+            to="https://github.com/chris-engelbrecht"
+            target="_blank"
+            icon="i-simple-icons-github"
+            aria-label="GitHub"
+            color="neutral"
+            variant="ghost" />
+          <UButton
+            to="mailto:chrisengelbrecht2000@gmail.com"
+            icon="i-lucide-mail"
+            aria-label="Email"
+            color="neutral"
+            variant="ghost" />
+        </div>
+      </template>
+    </UHeader>
+
     <UMain>
       <NuxtLayout>
         <NuxtPage />
