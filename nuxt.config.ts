@@ -1,12 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxt/image',
-    '@nuxtjs/svg-sprite',
-    '@nuxt/eslint'
-  ],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/eslint'],
 
   devtools: {
     enabled: true
@@ -21,8 +15,14 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { static: true }
   },
 
-  compatibilityDate: '2026-06-30'
+  ssr: false,
+
+  compatibilityDate: '2026-06-30',
+
+  nitro: {
+    preset: 'bun'
+  }
 })
